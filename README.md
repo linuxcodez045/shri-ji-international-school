@@ -29,4 +29,3 @@ npm run build
 ```
 
 The admission enquiry is intentionally a frontend-only demonstration: it does not transmit or store information. School management should confirm all content and contact details before public release, including the final postal PIN.
-
