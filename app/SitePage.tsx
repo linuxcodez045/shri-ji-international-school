@@ -330,7 +330,7 @@ export default function SitePage() {
               </div>
               {formError && <p className="form-message error" role="alert">{formError}</p>}
               {formSent && <p className="form-message success" role="status"><CheckCircle2 size={18} /> Demo submitted successfully. No data was sent or stored.</p>}
-              <button className="button button-gold" type="submit">Submit demo enquiry <ArrowRight size={16} /></button>
+              <button className="button button-gold" type="submit">Submit <ArrowRight size={16} /></button>
               <p className="form-note">Demonstration form — no enquiry data is transmitted or retained.</p>
             </form>
           </div>
