@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
-    themeColor: "#1c1917",
+    themeColor: "#071b3b",
     openGraph: {
       type: "website",
       title,

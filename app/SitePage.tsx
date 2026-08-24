@@ -185,22 +185,16 @@ export default function SitePage() {
           <Picture image={siteData.images.hero} className="hero-image" eager />
           <div className="hero-overlay" />
           <div className="hero-content shell">
-            <p className="hero-eyebrow">CBSE Affiliated <span /> Affiliation No. {siteData.school.affiliationNumber}</p>
-            <p className="hero-school-name">Shriji International School</p>
-            <h1 id="hero-title">Where <em>curiosity</em><br />becomes character.</h1>
-            <p className="hero-location">Senior Secondary School · {siteData.school.shortAddress}</p>
+            <p className="hero-eyebrow">CBSE Affiliated <span /> Affiliation No. 2132392</p>
+            <h1 id="hero-title">SHRIJI<br />INTERNATIONAL<br />SCHOOL</h1>
+            <p className="hero-location">{siteData.school.shortAddress}</p>
             <p className="hero-values">Learning <span>•</span> Character <span>•</span> Growth</p>
             <div className="hero-actions">
               <a className="button button-light" href="#about">Explore Our School <ArrowRight size={17} /></a>
               <a className="button button-outline" href="#enquiry">Admission Enquiry</a>
             </div>
           </div>
-          <aside className="hero-note" aria-label="School experience overview">
-            <span>01 / A fuller school life</span>
-            <strong>Learning that moves beyond the classroom.</strong>
-            <p>Academics, leadership, creativity and participation—seen through real school moments.</p>
-          </aside>
-          <a className="scroll-cue" href="#about">Discover the school <ArrowRight size={15} /></a>
+          <a className="scroll-cue" href="#about">Scroll to discover <span>↓</span></a>
         </section>
 
         <section className="trust-strip shell" aria-label="School credentials">
@@ -210,7 +204,7 @@ export default function SitePage() {
         <section className="section about-section" id="about">
           <div className="shell about-grid">
             <div className="about-copy">
-              <SectionHeading eyebrow="Welcome to Shriji" title="Rooted in Mathura. Focused on every next step." />
+              <SectionHeading eyebrow="Welcome" title="A clear window into school life" />
               <p className="lead-copy">{siteData.copy.about}</p>
               <div className="about-details">
                 <div><span>01</span><p><strong>CBSE affiliated</strong><small>Affiliation No. {siteData.school.affiliationNumber}</small></p></div>
@@ -229,7 +223,7 @@ export default function SitePage() {
         <section className="section experience-section" id="academics">
           <div className="shell">
             <div className="split-heading">
-              <SectionHeading eyebrow="Learning & experience" title="Four dimensions of a fuller school day" />
+              <SectionHeading eyebrow="Learning & experience" title="Learning in action, beyond a single moment" />
               <p>{siteData.copy.experience}</p>
             </div>
             <div className="experience-grid">
@@ -259,7 +253,7 @@ export default function SitePage() {
 
         <section className="facilities-section" id="school-life">
           <div className="shell">
-            <SectionHeading eyebrow="Explore the environment" title="Made for learning, expression and participation" intro="A considered overview of the spaces, activities and occasions visible across school life." />
+            <SectionHeading eyebrow="Explore the environment" title="Four ways to experience the school" intro="A considered overview of the spaces, activities and occasions visible across school life." />
             <div className="facility-grid">
               {siteData.facilities.map((item) => {
                 const Icon = iconMap[item.icon];
@@ -275,7 +269,7 @@ export default function SitePage() {
             <div className="culture-overlay" />
             <div className="culture-copy shell">
               <p className="eyebrow"><span />Culture & expression</p>
-              <h2>Tradition takes<br />the stage.</h2>
+              <h2>Shared stages.<br />Memorable moments.</h2>
               <p>{siteData.copy.culture}</p>
               <a className="button button-light" href="#gallery">View School Gallery <ArrowRight size={17} /></a>
             </div>
@@ -289,7 +283,7 @@ export default function SitePage() {
         <section className="section gallery-section" id="gallery">
           <div className="shell">
             <div className="split-heading gallery-heading">
-              <SectionHeading eyebrow="School gallery" title="The energy of school, captured honestly" />
+              <SectionHeading eyebrow="School gallery" title="A closer look at life on campus" />
               <p>Authentic moments from activities, presentations, games and cultural participation.</p>
             </div>
             <div className="gallery-grid">
@@ -305,7 +299,7 @@ export default function SitePage() {
         <section className="section notices-section" id="notices">
           <div className="shell">
             <div className="split-heading notices-heading">
-              <SectionHeading eyebrow="Notices & updates" title="School communication, made simple" />
+              <SectionHeading eyebrow="Notices & updates" title="A clear place for school communication" />
               <div><span className="demo-label">Demo content</span><p>These sample cards illustrate how confirmed notices could be presented.</p></div>
             </div>
             <div className="notice-grid">
